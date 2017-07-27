@@ -1,2 +1,4 @@
-.login-field{display: inline-block;}
-body{margin-top: 10px;}
+.login-field, .registration-field{display: inline-block; padding: 70px;}
+.bg-styling{background: ghostwhite; padding: 20px;}
+.bg-styling a{font-size: 30px;}
+.heading{font-size: 50px; letter-spacing: .5em;}
