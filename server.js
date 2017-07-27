@@ -25,6 +25,15 @@ app.get('/', function(req, res) {
   res.render('index', {});
 });
 
+app.get('/register', function(req, res){
+  res.render('register');
+});
+
+app.post('/register', function(req, res){
+  console.log(req.body);
+  res.redirect('/register')
+});
+
 app.get('/login', function(req, res) {
   res.render('login');
 });
@@ -32,7 +41,16 @@ app.get('/login', function(req, res) {
 app.post('/login', function(req, res) {
   const username = req.body.username;
   const password = req.body.password;
-  res.redirect('/login');
+  const login = req.body.login;
+  const register = req.body.register;
+
+  if (login) {
+    res.redirect('/login');
+  }
+
+  if (register) {
+    res.redirect('/register');
+  }
 });
 
 const port = process.env.PORT || 8000;
