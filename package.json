@@ -1,0 +1,30 @@
+{
+  "name": "sofltball-team-manager",
+  "version": "1.0.0",
+  "description": "softball team manager",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cale312/softball-manager.git"
+  },
+  "author": "cale oasin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cale312/softball-manager/issues"
+  },
+  "homepage": "https://github.com/cale312/softball-manager#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
