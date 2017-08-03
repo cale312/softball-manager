@@ -9,3 +9,4 @@ body{background: url('./img/glove-ball.jpg') no-repeat; background-size: cover;}
 .login-field a{color: #fff;}
 .begin-btn:hover, .login-btn:hover{background: rgba(0, 0, 0, 0.4);}
 .opacity{background: rgba(0, 0, 0, 0.4); color: #fff; width: 200px;}
+.main{background: rgba(0,0,0,0.2); padding: 70px;}
