@@ -1,12 +1,15 @@
 body{background: url('./img/glove-ball.jpg') no-repeat; background-size: cover;}
-.login-field, .registration-field{display: inline-block; padding: 75px;}
-.login-field{background: url('./img/manager.jpg') no-repeat; background-size: cover; background-position: center;}
+.login-field{}
 .bg-styling{background: ghostwhite; padding: 20px;}
 .bg-styling a{font-size: 30px;}
-.heading{font-size: 70px; letter-spacing: .5em; color: #fff; font-weight: bolder;}
-.begin-btn{font-size: 50px; background: rgba(255, 255, 255, 0.4); color: rgba(0, 0, 0, 0.7); border: white;}
+.heading{font-size: 130px; letter-spacing: .5em; color: #fff; font-weight: bolder;}
+.begin-btn{font-size: 30px; background: rgba(255, 255, 255, 0.4); color: rgba(0, 0, 0, 0.7); border: white;}
 .login-btn{background: rgba(255, 255, 255, 0.4); color: black; border: white;}
 .login-field a{color: #fff;}
 .begin-btn:hover, .login-btn:hover{background: rgba(0, 0, 0, 0.4);}
 .opacity{background: rgba(0, 0, 0, 0.4); color: #fff; width: 200px;}
 .main{background: rgba(0,0,0,0.2); padding: 70px;}
+.manager-stats{background: url('./img/anthem.jpg');}
+.manager-stats a{color: #fff;}
+.bg-fade{background: rgba(0, 0, 0, 0.5); color: #fff; padding: 5px;}
+.none{visibility: hidden;}
