@@ -20,37 +20,41 @@ app.set('view engine', 'handlebars');
 // change promise library
 mongoose.Promise = global.Promise;
 
+// controller functions
+const managers = require('./models/newManagerModel');
+
 // routes
 app.get('/', function(req, res) {
   res.render('index', {});
 });
 
-app.get('/register', function(req, res){
-  res.render('register');
-});
-
-app.post('/register', function(req, res){
-  console.log(req.body);
-  res.redirect('/register')
-});
+// app.get('/register', function(req, res){
+//   res.render('register');
+// });
+//
+// app.post('/register', function(req, res){
+//   console.log(req.body);
+//   res.redirect('/register')
+// });
 
 app.get('/login', function(req, res) {
   res.render('login');
 });
 
 app.post('/login', function(req, res) {
-  const username = req.body.username;
-  const password = req.body.password;
-  const login = req.body.login;
-  const register = req.body.register;
-
-  if (login) {
-    res.redirect('/login');
-  }
-
-  if (register) {
-    res.redirect('/register');
-  }
+  const name = req.body.username;
+  managers.findOne({
+    fullName: name
+  }).then(function(result){
+    if (result) {
+      res.render('team', {manager: name});
+    } else {
+      managers.create({
+        fullName: name
+      });
+      res.render('select');
+    }
+  });
 });
 
 const port = process.env.PORT || 8000;

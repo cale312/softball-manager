@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose');
 
 var managerSchema = mongoose.Schema({
@@ -6,7 +5,8 @@ var managerSchema = mongoose.Schema({
   gender: String,
   age: Number,
   email: String,
-  team: String
+  team: String,
+  players: []
 });
 
 const managerLogin = mongoose.model('managers', managerSchema);

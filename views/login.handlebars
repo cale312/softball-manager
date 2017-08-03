@@ -1,12 +1,11 @@
 <div class="container text-center">
   <form class="form-group" method="post" action="/login">
     <div class="well login-field">
-      <input type="text" name="username" placeholder="username" class="form-control">
+      <label class="well opacity">Welcome manager</label>
+      <input type="text" name="username" placeholder="manager name" class="form-control" required>
       <br>
-      <input type="password" name="password" placeholder="password" class="form-control">
-      <br>
-      <input type="submit" name="login" value="login" class="btn btn-primary">
-      <input type="submit" name="register" value="register" class="btn btn-primary">
-    </div>
+      <input type="submit" name="manage" value="manage" class="btn btn-primary login-btn">
+      <br><br>
+      <a href="/" class="fa fa-arrow-left"> back</a>
   </form>
 </div>

@@ -1,4 +1,11 @@
-.login-field, .registration-field{display: inline-block; padding: 70px;}
+body{background: url('./img/glove-ball.jpg') no-repeat; background-size: cover;}
+.login-field, .registration-field{display: inline-block; padding: 75px;}
+.login-field{background: url('./img/manager.jpg') no-repeat; background-size: cover; background-position: center;}
 .bg-styling{background: ghostwhite; padding: 20px;}
 .bg-styling a{font-size: 30px;}
-.heading{font-size: 50px; letter-spacing: .5em;}
+.heading{font-size: 70px; letter-spacing: .5em; color: #fff; font-weight: bolder;}
+.begin-btn{font-size: 50px; background: rgba(255, 255, 255, 0.4); color: rgba(0, 0, 0, 0.7); border: white;}
+.login-btn{background: rgba(255, 255, 255, 0.4); color: black; border: white;}
+.login-field a{color: #fff;}
+.begin-btn:hover, .login-btn:hover{background: rgba(0, 0, 0, 0.4);}
+.opacity{background: rgba(0, 0, 0, 0.4); color: #fff; width: 200px;}
